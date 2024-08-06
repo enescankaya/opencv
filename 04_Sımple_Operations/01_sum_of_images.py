@@ -8,7 +8,7 @@ cv2.rectangle(rectangle,(150,150),(350,350),(0,0,255),-1)
 
 add=cv2.add(circle,rectangle)
 print(add[256,256])
-cv2.imshow("Circle", circle)
+cv2.imshow("Circle", circle)#hello
 cv2.imshow("Rectangle",rectangle)
 cv2.imshow("Add",add)
 
