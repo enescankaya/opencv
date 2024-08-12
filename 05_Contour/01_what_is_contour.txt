@@ -1,0 +1,12 @@
+contour=bir geometrik şekli çevreleyen sınırlar(çizgiler) demektir.
+şeklin sınırları içerisinde ard arda devam eden ve benzer renk özelliklerine sahip olan noktalar bütünüdür.
+contour fonksiyonunu kullanabilmek için öncelikle görsel veya framelerimizi binary formata çevirmemiz gerekmektedir.
+"cv2.cvtColor()" fonksiyonuyla gray scaler formatına çeviricez
+daha sonra "cv2.treshold" ile binary formata çeviricez
+daha sonra şekli çevreleyen sınır çizgileri yani contourları bulmak için "cv2.findContours" fonksiyonunu kullanacağız
+daha sonra bu noktaları "cv2.drawContours" fonksiyonuyla boyayarak contourları çizmiş olacağız.
+ convex Hull(dışbükey örtü)
+ convex dışa doğru bükülen bir geometrik şekli ifade eder. beşgen gibi. yıldız ise içbükey şekildir.
+ convex hull amacı içbükey şekillerin dışına dışbükey şekiller çizmektir.
+D:\opencv\OpencvProjects\05_Contour\convexHull.PNG kısmında gösterilmektedir.
+convexity defects:dışbükey kusurlar
