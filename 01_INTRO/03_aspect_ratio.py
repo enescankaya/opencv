@@ -1,7 +1,7 @@
 import cv2
 def resizewithAspectRatio(img,width =None,height =None,inter =cv2.INTER_AREA):
     dimension=None
-    (h,w)=img.shape[:2]
+    (h,w)=img.shape[:2]#(height, width, channels)/ img.shape[:2] = (height,width)
     if(width is None and height is None):
         return img
     if width is None:
@@ -12,7 +12,7 @@ def resizewithAspectRatio(img,width =None,height =None,inter =cv2.INTER_AREA):
         r=width/float(w)
         dimension=(width,int(h*r))
         
-    return cv2.resize(img,dimension,interpolation= inter)
+    return cv2.resize(img,dimension,interpolation= inter)#cv2.INTER_AREA daha çok bir görüntüyü küçültürken detayları korumak ve düzgün bir sonuç elde etmek için tercih edilir.
 
 img=cv2.imread("klon.jpg")
 img1=resizewithAspectRatio(img,width=None,height=600,inter=cv2.INTER_AREA)

@@ -2,8 +2,6 @@ git add .
 git commit -m "message"
 git push origin main
 
-
-
 .gitignore: repo ya eklemek istemediğimiz dosyalari alt alta "06_Hough_Conversions/*" formatında yazıyoruz.
 
 sıfırdan repo için

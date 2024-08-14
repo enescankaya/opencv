@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib as plt
 path="TEST_IMAGES\opencv_logo.png"
-img=cv2.imread(path)#eğer buraya (path,0) yaazarsak yani görüntüyü siyah beyaz greyscaler yaparsak o zaman img.shape[3] değerini alamayız hata verir.
+img=cv2.imread(path,3)#eğer buraya (path,0) yaazarsak yani görüntüyü siyah beyaz greyscaler yaparsak o zaman img.shape[3] değerini alamayız hata verir.
 print(img.shape)#height,width,channel(renkli mi değil mi onu ifade eder) değerlerini verir
 #channel:3 ise ---> renklidir colorful
 #channel:1 veya hiçbişeyse ----> greyscale
