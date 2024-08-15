@@ -3,7 +3,7 @@ import numpy as np
 def nothing(x):
     pass
 
-img = np.zeros((512,512,3),np.uint8)
+img = np.zeros((540,540,3),np.uint8)
 cv2.namedWindow("image")
 
 cv2.createTrackbar("R","image",0,255,nothing )

@@ -15,7 +15,7 @@ cv2.line(canvas,p2,p3,(0,0,0),4)
 cv2.line(canvas,p1,p3,(0,0,0),4)#üçgen için 3 line ihtiyacımız var.
 points=np.array([[[110,200],[330,200],[100,100],[220,250]]],np.int32)
 cv2.polylines(canvas,[points],True,(255,0,0),5)#çokgen çizimi için kullanırız true demek kapalı olsun her tarafı demek false girersek bir kenarı açık kalır 
-cv2.ellipse(canvas,(512,512),(100,50),0,0,360,(0,0,255),-1)
+cv2.ellipse(canvas,(512,512),(100,50),0,0,360,(0,0,255),1)
 cv2.imshow("canvas",canvas)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
