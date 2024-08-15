@@ -14,6 +14,6 @@ cv2.imshow("original median",img_median)
 cv2.imshow("blur_median",median_blur)
 cv2.imshow("gaussian blur",gaussianblur_median)
 cv2.imshow("original bilateral",img_bilateral)
-cv2.imshow("bilateral_median",bilateral_median)#median hali daha düzgün çıkıyor görüntü noise dan dolayı
-cv2.waitKey(0)
+cv2.imshow("bilateral_median",bilateral_median)#median hali daha düzgün çı kıy or görüntü noise dan dolayı
+cv2.waitKey(0) 
 cv2.destroyAllWindows()

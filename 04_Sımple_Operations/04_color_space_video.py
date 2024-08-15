@@ -3,7 +3,7 @@ cap=cv2.VideoCapture("video.mp4")
 
 while True:
     ret,frame=cap.read()
-    if not ret:
+    if  ret is False:
         #break yazarsak videoyu bitirir
         cap.set(cv2.CAP_PROP_POS_AVI_RATIO, 0) # videyu başa sarar.
         continue
@@ -11,6 +11,6 @@ while True:
     cv2.imshow("Video",frame)
     if cv2.waitKey(30) & 0xFF==ord("q"):
         break
-    
+
 cap.release()
 cv2.destroyAllWindows()
