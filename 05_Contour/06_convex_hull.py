@@ -8,7 +8,7 @@ img = cv2.imread("map.jpg")
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # Görüntüye bulanıklık (blur) uygulayarak gürültüyü azalt
-blur = cv2.blur(gray, (3, 3))
+blur = cv2.GaussianBlur(gray, (3, 3),5)
 
 # Threshold işlemi ile görüntüyü ikili (binary) hale getir
 # Eğer bazı yerler fazladan kararıyorsa, min threshold değerini düşürebilirsiniz (30 iyi bir başlangıç)
@@ -24,7 +24,6 @@ for i in range(len(contours)):  # 0'dan kontur sayısına kadar döngü oluştur
 
 # Boş bir arkaplan (siyah görüntü) oluştur
 bg = np.zeros((thresh.shape[0], thresh.shape[1], 3), np.uint8)
-
 # Konturları ve convex hull'ları çiz
 for i in range(len(contours)):
     cv2.drawContours(bg, contours, i, (255, 0, 0), 1, 64, hierarchy)  # Orijinal konturları mavi çiz
