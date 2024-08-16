@@ -27,7 +27,7 @@ bg = np.zeros((thresh.shape[0], thresh.shape[1], 3), np.uint8)
 # Konturları ve convex hull'ları çiz
 for i in range(len(contours)):
     cv2.drawContours(bg, contours, i, (255, 0, 0), 1, 64, hierarchy)  # Orijinal konturları mavi çiz
-    cv2.drawContours(bg, hull, i, (0, 255, 0), 1, 64)  # Convex hull'ları yeşil çiz
+    cv2.drawContours(img, hull, i, (0, 255, 0), 1, 64)  # Convex hull'ları yeşil çiz
 
 # Görüntüleri ekranda göster
 cv2.imshow("bg", bg)
