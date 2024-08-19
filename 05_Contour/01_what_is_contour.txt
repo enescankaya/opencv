@@ -10,3 +10,4 @@ daha sonra bu noktaları "cv2.drawContours" fonksiyonuyla boyayarak contourları
  convex hull amacı içbükey şekillerin dışına dışbükey şekiller çizmektir.
 D:\opencv\OpencvProjects\05_Contour\convexHull.PNG kısmında gösterilmektedir.
 convexity defects:dışbükey kusurlar
+.
