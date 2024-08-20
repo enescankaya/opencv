@@ -42,8 +42,8 @@ while 1:
     if lines is not None:
         for line in lines:
             x1, y1, x2, y2 = line[0]  # Çizginin başlangıç ve bitiş noktalarını al
-            # Çizgiyi yeşil renkte (0, 255, 0) ve 1 piksel kalınlığında çizdir
-            cv2.line(frame, (x1, y1), (x2, y2), (2, 0, 255), 2)
+            # Çizgiyi KIRMIZI renkte ve 1 piksel kalınlığında çizdir
+            cv2.line(frame, (x1, y1), (x2, y2), (2, 0, 255), 1)
 
     # İşlenen kareyi ekranda gösterin
     cv2.imshow("lined", frame)
